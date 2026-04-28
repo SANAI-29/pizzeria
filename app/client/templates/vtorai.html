@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{{ url_for('static', filename='css/vtorai.css') }}" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="vtorai.css"> -->
+    <title>Водитель</title>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Личный кабинет</h1>
+        <h3>Введите данные водителького удостоверения</h3>
+        <form method="POST" action="/about">
+            <div class="input-group">
+                <label for="nomer">Номер</label>
+                <input type="text" id="nomer" name="nomer" placeholder="Введите номер" />
+            </div>
+
+            <div class="input-group">
+                <label for="srok">Срок действия</label>
+                <input type="srok" id="srok" name="srok" placeholder="Введите срок действия" />
+            </div>
+
+            <div class="input-group">
+                <label for="categoria">Категория ТС</label>
+                <input type="categoria" id="categoria" name="categoria" placeholder="Введите категорию ТС" />
+            </div>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+</body>
+</html>
